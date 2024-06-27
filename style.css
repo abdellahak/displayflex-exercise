@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 1000px;
+}
+/* head */
+.title{
+    background: #DDAA00;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+.title h1{
+    font-weight: 800;
+}
+/* navigation */
+nav{
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: stretch;
+    background: #CCCCCC;
+}
+.option{
+    text-decoration: none;
+    color: #DDAA00;
+    border: 1px black solid;
+    padding: 10px 20px;
+    display: block;
+    flex-basis: 100%;
+    text-align: center;
+    background: white;
+    white-space: nowrap;
+}
+/* main */
+main{
+    display: flex;
+    width: 100%;
+    background: #7F7F7F;
+    padding:10px ;
+    gap: 10px;
+    justify-content: center;
+}
+.card{
+    flex-basis: 600px;
+    padding: 10px;
+    display: flex;
+    flex-direction:column ;
+    background: white;
+    gap: 20px;
+
+}
+.card img{
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+.card p{
+    flex: auto;
+}
+.card a{
+    display: block;
+    text-align: center;
+    background-color: #EFEFEF;
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 5px;
+}
+/* footer */
+footer{
+    background: #DDAA00;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+@media screen and (max-width:600px) {
+    main{
+        flex-direction: column;
+    }
+}
